@@ -1,0 +1,11 @@
+<nav class="navbar">
+    <h3 style="padding: 0; margin: 0; color:var(--color-pink)">blazedkitsune</h3>
+    <hr>
+    <ul>
+        {% for item in nav %}
+        <li>
+            <a href="{{ item.href }}" title="{{ item.title }}"{% if page.url == item.href %} class="active" aria-current="page"{% endif %}>{{ item.label }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

@@ -12,62 +12,7 @@ title: Test Layout
 </head>
 <body>
 <main>
-    <nav class="navbar">
-        <ul>
-            <li>
-                <h3 style="padding: 0; margin: 0; color:var(--color-pink)">blazedkitsune</h3>
-            </li>
-            <hr>
-            <li>
-                <a href="/" title="go home">
-                    home
-                </a>
-            </li>
-            <li>
-                <a href="lyrics.html" title="go to lyrics">
-                    project hail mary <3
-                </a>
-            </li>
-
-            <li>
-                <a href="songs.html" title="go to songs">
-                    susie deltarune <3
-                </a>
-            </li>
-
-            <li>
-                <a href="video.html" title="go to videos">
-                    videos
-                </a>
-            </li>
-
-            <li>
-                <a href="text.html" title="go to text">
-                    text test
-                </a>
-            </li>
-            <li>
-                <a href="table.html" title="go to table">
-                    orar
-                </a>
-            </li>
-            <li>
-                <a href="form.html" title="go to form">
-                    formular
-                </a>
-            </li>
-            <li>
-                <a href="button.html" title="go to button">
-                    buttons
-                </a>
-            </li>
-            <li>
-                <a href="tanger.html" title="go to tanger">
-                    banner test
-                </a>
-            </li>
-        </ul>
-    </nav>
+    {% include "nav.html" %}
     <div class="content">
         {{ content | safe }}
     </div>
