@@ -3,6 +3,8 @@
 
 # IntelliJ project files
 .idea
+_site
+node_modules/
 *.iml
 out
 gen
