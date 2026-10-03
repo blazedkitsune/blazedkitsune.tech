@@ -1,0 +1,16 @@
+table, th, td {
+    border: 1px solid var(--accent2);
+    background-color: var(--bg-col2);
+    color: var(--fg-col);
+    user-select: none;
+    font-size: 14px;
+}
+table {
+    border-collapse: collapse;
+}
+th{
+    width:100px
+}
+.first{
+    text-align: left;
+}

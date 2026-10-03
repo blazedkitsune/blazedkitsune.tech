@@ -1,0 +1,11 @@
+body{
+    background-image: url("../assets/images/tanger.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    text-shadow: 2px 2px var(--accent), -2px -2px var(--accent2);
+}
