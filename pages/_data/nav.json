@@ -1,6 +1,6 @@
 [
   { "href": "/",            "title": "go home",      "label": "home" },
-  { "href": "/lyrics.html", "title": "go to lyrics", "label": "project hail mary <3" },
+  { "href": "/phm/",       "title": "go to lyrics", "label": "project hail mary <3" },
   { "href": "/test/",       "title": "go to test",   "label": "test label please work" },
-  { "href": "/songs.html",  "title": "go to songs",  "label": "susie deltarune <3" }
+  { "href": "/dbn4/",       "title": "go to songs",  "label": "susie deltarune <3" }
 ]

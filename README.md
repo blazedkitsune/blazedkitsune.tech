@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: Heading
+title: readme
 ---
 # {{ title }}
 test

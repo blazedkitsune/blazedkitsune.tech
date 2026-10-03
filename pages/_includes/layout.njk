@@ -5,6 +5,7 @@ title: Test Layout
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link href="/assets/images/cat.ico" rel="icon" type="image/ico">
     <link href="/css/main.css" rel="stylesheet">
@@ -12,7 +13,7 @@ title: Test Layout
 </head>
 <body>
 <main>
-    {% include "nav.html" %}
+    {% include "nav.njk" %}
     <div class="content">
         {{ content | safe }}
     </div>
