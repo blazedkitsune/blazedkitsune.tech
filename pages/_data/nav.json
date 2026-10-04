@@ -1,6 +1,6 @@
 [
   { "href": "/",            "title": "go home",      "label": "home" },
-  { "href": "/machine/",    "title": "go to machine","label": "yacht infinite generator" },
+  { "href": "/steam/",      "title": "go to steam",  "label": "steam hardware #1 fan" },
   { "href": "/phm/",        "title": "go to lyrics", "label": "project hail mary <3" },
   { "href": "/test/",       "title": "go to test",   "label": "test label please work" },
   { "href": "/dbn4/",       "title": "go to songs",  "label": "susie deltarune <3" }

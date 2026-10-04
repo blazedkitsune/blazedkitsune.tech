@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-Title: steam machine
+Title: steam hardware
 ---
 # {{ Title }}
 
@@ -8,6 +8,7 @@ Title: steam machine
 
 ![steam machine](/assets/images/steam_machine.png)
 
-steam frame when
 
-![steam frame](/assets/images/email.gif)
+and another 10 billion yachts to gabe newel
+
+![steam frame](/assets/images/steam_frame.png)
