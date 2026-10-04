@@ -1,4 +1,5 @@
 :root {
+    /* colors */
     --color-cream: #FFCA95;
     --color-peach: #FF7873;
     --color-pink: #E22F80;
@@ -18,15 +19,15 @@
     --accent2: var(--color-purple);
     --accent-light: var(--color-cream);
 
-    /* spacing scale, use this instead of magic numbers everywhere */
+    color-scheme: dark;
+
+    /* spacing */
     --space-sm: 0.5rem;
     --space-md: 1rem;
     --space-lg: 2rem;
     --space-xl: 4rem;
 
     --content-width: 720px;
-
-    color-scheme: dark
 }
 
 @font-face {
@@ -39,17 +40,12 @@
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    min-height: 100%;
-}
-.content img,
-.content video {
-    max-width: 100%;
-    height: auto;
+html {
+    min-height: 100vh;
 }
 body {
     padding-top: var(--space-xl);
+    margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -57,6 +53,18 @@ body {
     background-color: var(--bg-col);
     color: var(--fg-col);
     line-height: 1.5;
+}
+
+.content {
+    min-width: 0;
+    img, video {
+        max-width: 100%;
+        height: auto;
+    }
+    img.small,
+    video.small {
+        width: 220px;
+    }
 }
 
 
@@ -68,7 +76,7 @@ main {
     column-gap: var(--space-lg);
     margin: 0 auto;
     flex: 1;
-    padding: var(--space-md); /* your margin lives here now */
+    padding: var(--space-md);
 }
 
 .footer {
@@ -109,13 +117,6 @@ header{
     padding: var(--space-sm) var(--space-md);
 }
 /* --- components --- */
-.content{
-    min-width: 0;
-}
-
-.content img.small {
-    width: 220px;
-}
 
 #testid {
     color: var(--accent);
@@ -132,13 +133,13 @@ a {
     text-decoration-thickness: 1px;
     text-underline-offset: 0.2em;
     img {
-        display: block;
+        display: inline-block;
+    }
+    &:hover, &:active {
+        color: var(--accent-light);
     }
 }
 
-a:hover, a:active {
-    color: var(--accent-light);
-}
 
 /* --- button --- */
 button {
@@ -152,13 +153,11 @@ button {
     text-underline-offset: 0.2em;
     -webkit-appearance: none;
     cursor: pointer;
-}
-
-button:hover {
-    color: var(--accent-light);
-}
-
-button:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
+    &:hover, &:active {
+        color: var(--accent-light);
+    }
+    &:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+    }
 }
